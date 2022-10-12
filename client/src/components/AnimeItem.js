@@ -2,8 +2,9 @@ import React from 'react';
 
 function AnimeItem(props) {
     return (
-        <div>
-            
+        <div className='anime-item-container'>
+         <img src="" alt=""/>
+         <button onClick={handleOnClick}> Discuss</button>
         </div>
     );
 }

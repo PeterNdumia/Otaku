@@ -2,7 +2,11 @@ import React from 'react';
 
 function NewComment(props) {
     return (
-        <div>
+        <div>   
+        //post comment to user
+        //input field instead with handlesubmit
+        <p>comment</p>
+        <button>post</button>
             
         </div>
     );
