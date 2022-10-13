@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :animecomments
   resources :comments
   resources :animes
   # Routing logic: fallback requests for React Router.

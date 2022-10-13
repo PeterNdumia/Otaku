@@ -14,11 +14,14 @@ function CommentItem({comment, onEditComment, onDeleteComment}) {
 
 
     }
+    function handleEdit(){
+        
+    }
     return (
         <div className='comment-item'>
             {/*comment item from index comment'*/}
             <p>{comment.msg}</p>
-            <button>edit</button>
+            <button onClick={handleEdit}>edit</button>
             <button onClick={handleDelete}>delete</button>
         </div>
     );

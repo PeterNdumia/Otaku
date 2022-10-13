@@ -1,15 +1,13 @@
 import React from 'react';
 
-function AnimeSummary() {
-
-    //fetch from animes using id
+function AnimeSummary(anime) {
 
     return (
         <div>
-            {/*add descrption image and rating*/}
-            <h3>Anime title</h3>
-            <img src="" alt=""/>
-            <p>descrption</p>
+            <h3>{anime.title}</h3>
+            <img src={anime.img} alt=""/>
+            <p>{anime.desc}</p>
+            <p>Rating: {anime.rating}</p>
             
         </div>
     );

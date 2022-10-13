@@ -3,7 +3,8 @@ import CommentItem from './CommentItem';
 
 function CommentList({comments, getComments, onEditComment, onDeleteComment}) {
     useEffect(()=>{
-        fetch('https://localhost:3000/comments')
+        //fetch anime specific comments
+        fetch('https://localhost:3000/animeComments')
         .then((response)=> response.json())
         .then((data)=>{
             getComments(data)
