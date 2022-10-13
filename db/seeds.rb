@@ -11,4 +11,4 @@ Anime.create([{name:"Naruto", image: "", description: "A show about naruto", rat
     {name:"Naruto5", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto6", image: "", description: "A show about naruto", rating:"8.5/10"}
     {name:"Naruto7", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto8", image: "", description: "A show about naruto", rating:"8.5/10"}
     {name:"Naruto9", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto10", image: "", description: "A show about naruto", rating:"8.5/10"}])
-Comment.create([{commentmsg:"It was such a good show"},{commentmsg:"It was such a good show"},{commentmsg:"It was such a good show"},{commentmsg:"It was such a good show"}])
+Comment.create([{commentmsg:"It was such a good show", anime_id:1},{commentmsg:"It was such a good show",anime_id:2},{commentmsg:"It was such a good show",anime_id:1},{commentmsg:"It was such a good show",anime_id:2}])
