@@ -4,7 +4,7 @@ import CommentItem from './CommentItem';
 function CommentList(props) {
     return (
         //list comment items
-        <div>
+        <div className='comment-list'>
             <CommentItem/>
         </div>
     );
