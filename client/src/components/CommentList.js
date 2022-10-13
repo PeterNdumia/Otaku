@@ -1,19 +1,20 @@
 import React,{useEffect} from 'react';
 import CommentItem from './CommentItem';
 
-function CommentList({comments, getComments, onEditComment, onDeleteComment}) {
+function CommentList({animeId, comments, getComments, onEditComment, onDeleteComment}) {
     useEffect(()=>{
         //fetch anime specific comments
-        fetch('https://localhost:3000/animeComments')
+        fetch(`http://localhost:3000/animes/${animeId}`)
         .then((response)=> response.json())
         .then((data)=>{
-            getComments(data)
+            console.log(data)
+            getComments(data.comments)
         })
         .catch((err)=>{
             console.log(err.message);
 
         });
-    }, [getComments])
+    }, [getComments, animeId])
 
     const renderComments = comments.map((comment)=>{
         return <CommentItem key= {comment.id} comment={comment} commentID={comment.id} onEditComment={onEditComment} onDeleteComment={onDeleteComment}/>

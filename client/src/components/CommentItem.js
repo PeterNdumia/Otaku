@@ -20,7 +20,7 @@ function CommentItem({comment, onEditComment, onDeleteComment}) {
     return (
         <div className='comment-item'>
             {/*comment item from index comment'*/}
-            <p>{comment.msg}</p>
+            <p>{comment.commentMsg}</p>
             <button onClick={handleEdit}>edit</button>
             <button onClick={handleDelete}>delete</button>
         </div>

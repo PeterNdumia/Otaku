@@ -1,3 +1,4 @@
 class AnimeSerializer < ActiveModel::Serializer
-  attributes :id, :title, :desc, :img, :rating
+  attributes :id, :title, :img
+  
 end

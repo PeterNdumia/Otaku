@@ -6,9 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Anime.create([{name:"Naruto", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto1", image: "", description: "A show about naruto", rating:"8.5/10"} ,
-    {name:"Naruto3", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto4", image: "", description: "A show about naruto", rating:"8.5/10"},
-    {name:"Naruto5", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto6", image: "", description: "A show about naruto", rating:"8.5/10"}
-    {name:"Naruto7", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto8", image: "", description: "A show about naruto", rating:"8.5/10"}
-    {name:"Naruto9", image: "", description: "A show about naruto", rating:"8.5/10"},{name:"Naruto10", image: "", description: "A show about naruto", rating:"8.5/10"}])
-Comment.create([{commentmsg:"It was such a good show", anime_id:1},{commentmsg:"It was such a good show",anime_id:2},{commentmsg:"It was such a good show",anime_id:1},{commentmsg:"It was such a good show",anime_id:2}])
+Anime.create([{title:"Naruto", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
+    {title:"Naruto1", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"} ,
+    {title:"Naruto3",desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"},
+    {title:"Naruto", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
+    {title:"Naruto1", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"} ,
+    {title:"Naruto3",desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"},
+    {title:"Naruto", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
+    {title:"Naruto1", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"} ,
+    {title:"Naruto3",desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"}])
+Comment.create([{commentMsg:"It was such a good show", anime_id:1},{commentMsg:"It was such a good show",anime_id:2},{commentMsg:"It was such a good show",anime_id:1},{commentMsg:"It was such a good show",anime_id:2}])

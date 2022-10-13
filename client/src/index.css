@@ -11,18 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.anime-item-container{
-  border-radius: 10px;
-  border: solid black 2px;
-  width: 200px;
+
+.anime-list {
+  width:auto;
+  height:auto;
   margin: 5px;
   align-self: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
+  position: relative;
+  flex-flow: row wrap;
+  padding-left: 100px;
 }
-.anime-item-container img {
-  width:100px;
-  height:100px;
+.anime-item{
+  width:200px;
+  height: auto;
+  margin: 10px;
+  border:1px solid black;
+  padding-bottom: 10px;
 }
+.anime-item img{
+  width:200px;
+  height: 150px;
+  object-fit: cover;
+  
+}
+.anime-summary{
+  width:100%;
+  height:auto;
+}
+

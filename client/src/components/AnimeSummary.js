@@ -1,15 +1,10 @@
 import React from 'react';
 
-function AnimeSummary(anime) {
-
+function AnimeSummary({anime}) {
+    //console.log(anime.title)
     return (
-        <div>
-               <p>Animesummary</p>
-            <h3>{anime.title}</h3>
-            <img src={anime.img} alt=""/>
-            <p>{anime.desc}</p>
-            <p>Rating: {anime.rating}</p>
-            
+        <div className='anime-summary'>
+     
         </div>
     );
 }

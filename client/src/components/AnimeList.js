@@ -4,9 +4,10 @@ import AnimeItem from './AnimeItem';
 function AnimeList({animes, getAnimes}) {
       //fetch animes and map them on animelist
       useEffect(()=>{
-        fetch('https://localhost:3000/animes')
+        fetch('http://localhost:3000/animes')
         .then((response)=> response.json())
         .then((data)=>{
+            console.log(data)
             getAnimes(data)
         })
         .catch((err)=>{
@@ -16,12 +17,11 @@ function AnimeList({animes, getAnimes}) {
     }, [getAnimes])
 
     const renderAnimes = animes.map((anime)=>{
-        return <AnimeItem key= {animes.id} anime={anime} animeID={anime.id}/>
+        return <AnimeItem key= {anime.id} anime={anime} />
     })
 
     return (
         <div className='anime-list'>
-            <p>Animelist</p>
             {renderAnimes}
         </div>
     );
