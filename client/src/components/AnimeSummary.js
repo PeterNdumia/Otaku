@@ -4,6 +4,7 @@ function AnimeSummary(anime) {
 
     return (
         <div>
+               <p>Animesummary</p>
             <h3>{anime.title}</h3>
             <img src={anime.img} alt=""/>
             <p>{anime.desc}</p>

@@ -22,6 +22,7 @@ function CommentList({comments, getComments, onEditComment, onDeleteComment}) {
     return (
         //list comment items
         <div className='comment-list'>
+               <p>commentlist</p>
            {renderComments}
         </div>
     );

@@ -21,6 +21,7 @@ function AnimeList({animes, getAnimes}) {
 
     return (
         <div className='anime-list'>
+            <p>Animelist</p>
             {renderAnimes}
         </div>
     );

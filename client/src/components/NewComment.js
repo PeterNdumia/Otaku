@@ -20,6 +20,7 @@ function NewComment({onAddComment}) {
 
     return (
     <div className='new-comment'>
+           <p>new commwnt</p>
             <form onSubmit={handleSubmit}>
                <input type="text" name="msg" value={commentMsg} onChange={(e)=> setCommentMsg(e.target.value)}/>
               <button type="submit" value="Submit">Post</button>
