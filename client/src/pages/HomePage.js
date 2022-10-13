@@ -1,10 +1,12 @@
 import React from 'react';
 import AnimeList from '../components/AnimeList'
 
-function HomePage(props) {
+function HomePage({animes, getAnimes}) {
+  
     return (
         <div className='home-page'>
-            <AnimeList/>
+            <p>Home page</p>
+            <AnimeList animes={animes} getAnimes={getAnimes}/>
         </div>
     );
 }

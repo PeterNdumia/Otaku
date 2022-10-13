@@ -3,12 +3,12 @@ import AnimeSummary from '../components/AnimeSummary'
 import NewComment from '../components/NewComment'
 import CommentList from '../components/CommentList'
 
-function AnimePage(props) {
+function AnimePage({animes, comments, getComments, onAddComment, onEditComment, onDeleteComment}) {
     return (
         <div className='anime-page'>
-            <AnimeSummary/>
-            <NewComment/>
-            <CommentList/>
+            <AnimeSummary animes={animes} />
+            <NewComment onAddComment={onAddComment}/>
+            <CommentList getComments={getComments} onEditComment={onEditComment} onDeleteComment={onDeleteComment}/>
         </div>
     );
 }

@@ -1,12 +1,25 @@
 import React from 'react';
+import axios from 'axios';
 
-function CommentItem(props) {
+
+function CommentItem({comment, onEditComment, onDeleteComment}) {
+
+    //create functions to edit and delete comments 
+    function handleDelete(){
+        axios.delete(`https://localhost:3000/comments/${comment.id}`)
+        .then(()=>{
+           
+            onDeleteComment(comment)
+        })
+
+
+    }
     return (
         <div className='comment-item'>
-            //comment item from index comment'
-            <p>comment</p>
+            {/*comment item from index comment'*/}
+            <p>{comment.msg}</p>
             <button>edit</button>
-            <button>delete</button>
+            <button onClick={handleDelete}>delete</button>
         </div>
     );
 }
