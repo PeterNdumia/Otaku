@@ -5,6 +5,7 @@ import AnimePage from '../pages/AnimePage'
 import { Routes, Route } from "react-router-dom";
 import { useCallback, useState, useEffect } from "react";
 import Login from '../pages/Login';
+import UpdateComment from './UpdateComment';
 
 function App() {
   const[animes, setAnimes]= useState([]);
@@ -32,14 +33,13 @@ function App() {
     setComments([...comments, newComment])
   }
 
-  function onEditComment(editedComment){
-    const newComments = comments.map(comment=>{
-      if (comment.id === editedComment.id){
-        return editedComment
-      }
-      return setComments([...comments,newComments])
-    })
+  function onEditComment(editedComment) {
+    const editedCommentsArray = comments.map((comment) => {
+      return comment.id === editedComment.id ? editedComment : comment;
+    });
+    setComments([...comments,editedCommentsArray]);
   }
+
 
   function onDeleteComment(deletedComment){
     const newComments = comments.filter(comment=> comment.id!== deletedComment.id);
@@ -55,6 +55,7 @@ function App() {
       <Route path="/" element= {<HomePage animes={animes} getAnimes={getAnimes} />} ></Route>
       <Route path="/login" element= {<Login/>} ></Route>
       <Route path="/animepage/:animeId" element= {<AnimePage user={user} setUser={setUser} comments={comments} getComments={getComments} onAddComment={onAddComment} onEditComment={onEditComment} onDeleteComment={onDeleteComment}/>}></Route>
+      <Route path="/editcomment" element={<UpdateComment onEditComment={onEditComment} />}></Route>
      </Routes>
     </div>
   );

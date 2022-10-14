@@ -36,7 +36,7 @@ function AnimePage({user,setUser, comments, getComments, onAddComment, onEditCom
         <div className='anime-page'>
             <AnimeSummary anime={anime}/>
             <NewComment user={user} animeId={animeId} onAddComment={onAddComment}/>
-            <CommentList user= {user} animeId={animeId} comments={comments} getComments={getComments} onEditComment={onEditComment} onDeleteComment={onDeleteComment}/>
+            <CommentList user= {user} animeId={animeId} comments={comments} getComments={getComments} onDeleteComment={onDeleteComment}/>
         </div>
     );
 }

@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router';
 
-
-function CommentItem({user, comment, onEditComment, onDeleteComment}) {
+function CommentItem({user, comment, onDeleteComment}) {
 
     const[username, setUsername]= useState()
+    const navigate = useNavigate()
     useEffect(()=>{
         fetch(`/comments/${comment.id}`)
         .then((response)=> response.json())
@@ -29,15 +30,21 @@ function CommentItem({user, comment, onEditComment, onDeleteComment}) {
 
     }
  
-    function handleEdit(){
+    const setData = (comment) => {
+        console.log(comment);
+        let {id,commentMsg} = comment
+        localStorage.setItem('ID',id)
+        localStorage.setItem('COMMENTMSG', commentMsg)
+
+        navigate("/editcomment")
         
-    }
+     }
 
     if(user.id === comment.user_id){
        return( <div className='comment-item'>
         <p><b><i>@{username}</i></b>  {comment.commentMsg}</p>
         <div className='button-container'>
-        <button onClick={handleEdit}>edit</button>
+        <button  onClick={() => setData(comment)}>edit</button>
         <button onClick={handleDelete}>delete</button>
         </div>
     </div>)
