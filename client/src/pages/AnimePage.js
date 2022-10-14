@@ -16,7 +16,8 @@ function AnimePage({user,setUser, comments, getComments, onAddComment, onEditCom
 
 
     useEffect(() =>{
-         fetch(`http://localhost:3000/animes/${animeId}`)
+        //change
+         fetch(`/animes/${animeId}`)
         .then(r => r.json())
         .then(data => {
             console.log(data)
