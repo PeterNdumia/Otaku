@@ -14,16 +14,16 @@ You will need a web browser:
 
 ### Live Link
 
-At the moment the application is not deployed.
+The link to the app is https://otaku-anime.herokuapp.com/
 
 ## Built with
 
 - React Js
 - CSS
 - Ruby
+- Postgresql
 
 ## Technologies
-- Vercel
 - Heroku
 - Rails
 
