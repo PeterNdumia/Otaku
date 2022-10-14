@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-
+    rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
     def create
         comment = Comment.create(comment_params)
         render json: comment, status: :created
@@ -25,5 +25,9 @@ class CommentsController < ApplicationController
     def comment_update_params
         params.permit(:commentMsg)
     end
+    def record_not_found
+        render json: { error: "Comment not found" }, status: :not_found
+      end
+    
 end
 

@@ -135,6 +135,12 @@ code {
   width:auto;
   border: 1px;
   border-color: white;
+  border-style: dashed;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 100px;
+  padding-bottom: 10px;
+  margin-top: 5px;
 }
 .comment-item p{
   text-align: start;
@@ -143,12 +149,23 @@ code {
 
 }
 .button-container{
-  align-items: right;
   margin-top: 10px;
+  align-items: left;
+  width:auto;
+  text-align: start;
 }
 .button-container button{
   margin-left:20px;
+  border: none;
+  padding-bottom: 2px;
+  background: #010e1a;;
+  border-color: white;
+  color: white;
+  
+
+ 
 }
+
 .comment-list{
   padding-left: 100px;
   align-items: left; 
@@ -159,3 +176,4 @@ code {
 .new-comment p{
   text-align: start;
 }
+

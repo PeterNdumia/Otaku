@@ -17,7 +17,11 @@ function NewComment({user, animeId,onAddComment}) {
     }
     })
     .then(response => response.json())
-    .then(data=> onAddComment(data));
+    .then((data)=> {
+        console.log(data)
+        onAddComment(data)
+    });
+    setCommentMsg("")
     }
 
     return (

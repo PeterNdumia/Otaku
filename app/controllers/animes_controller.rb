@@ -7,6 +7,6 @@ class AnimesController < ApplicationController
 
     def show
         anime = Anime.find_by(id: params[:id])
-        render json: anime, serializer: AnimeSummarySerializer, status: :ok
+        render json: anime, serializer: AnimeSummarySerializer,  status: :ok
     end
 end
