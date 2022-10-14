@@ -25,7 +25,7 @@ At the moment the application is not deployed.
 ## Technologies
 - Vercel
 - Heroku
-- Sinatra
+- Rails
 
 ## MIT License
 
