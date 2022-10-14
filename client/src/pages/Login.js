@@ -14,7 +14,7 @@ function Login({ onLogin }) {
           <LoginForm onLogin={onLogin} />
       
           <p>
-            Don't have an account? &nbsp;
+            New in Otaku? &nbsp;
             <Button color="secondary" onClick={() => setShowLogin(false)}>
               Sign Up
             </Button>
@@ -25,7 +25,7 @@ function Login({ onLogin }) {
           <SignUpForm onLogin={onLogin} />
          
           <p>
-            Already have an account? &nbsp;
+            Have an account? &nbsp;
             <Button color="secondary" onClick={() => setShowLogin(true)}>
               Log In
             </Button>
