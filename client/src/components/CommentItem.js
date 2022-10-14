@@ -18,8 +18,6 @@ function CommentItem({user, comment, onDeleteComment}) {
         });
     }, [comment.id])
   
-
-    //create functions to edit and delete comments 
     function handleDelete(){
         axios.delete(`/comments/${comment.id}`)
         .then(()=>{
