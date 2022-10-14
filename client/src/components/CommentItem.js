@@ -28,9 +28,11 @@ function CommentItem({user, comment, onEditComment, onDeleteComment}) {
 
 
     }
+ 
     function handleEdit(){
         
     }
+
     if(user.id === comment.user_id){
        return( <div className='comment-item'>
         <p><b><i>@{username}</i></b>  {comment.commentMsg}</p>

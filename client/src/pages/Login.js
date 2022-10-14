@@ -37,9 +37,10 @@ function Login({ onLogin }) {
 }
 
 const Wrapper = styled.section`
-  max-width: 500px;
+  max-width: 300px;
   margin: 40px auto;
   padding: 16px;
+  background: #010e1a;
 `;
 
 
