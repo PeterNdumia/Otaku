@@ -1,10 +1,4 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
 
 Anime.create([{title:"Naruto", desc: "Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes. It is set two and a half years after the original series in the Naruto universe, following the ninja teenager Naruto Uzumaki and his allies.", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
     {title:"Castlevania", desc: "Castlevania is an American adult animated dark fantasy action streaming television series made for the streaming service Netflix and is produced by Frederator Studios' Kevin Kolde and Fred Seibert.[1] Based on the Japanese video game series of the same name by Konami, the first two seasons adapt the 1989 entry Castlevania III: Dracula's Curse and follow Trevor Belmont, Alucard and Sypha Belnades as they defend the nation of Wallachia from Dracula and his minions. Additionally, characters and elements from the 2005 entry Castlevania: Curse of Darkness are featured beginning in the second season, and Alucard's backstory is drawn from Castlevania: Symphony of the Night. The art style is heavily influenced by Japanese animation and Ayami Kojima's artwork. ", img: "https://m.media-amazon.com/images/M/MV5BMjAzMjU2MjYzMl5BMl5BanBnXkFtZTgwNTQ4Nzk1NjM@._V1_FMjpg_UX1000_.jpg", rating:"8.3/10"} ,
@@ -15,4 +9,5 @@ Anime.create([{title:"Naruto", desc: "Naruto: Shippuden is an anime series mainl
     {title:"Naruto", desc: "Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes. It is set two and a half years after the original series in the Naruto universe, following the ninja teenager Naruto Uzumaki and his allies.", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
     {title:"Naruto1", desc: "Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes. It is set two and a half years after the original series in the Naruto universe, following the ninja teenager Naruto Uzumaki and his allies.", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"} ,
     {title:"Naruto3",desc: "Naruto: Shippuden is an anime series mainly adapted from Part II of Masashi Kishimoto's original manga series, with exactly 500 episodes. It is set two and a half years after the original series in the Naruto universe, following the ninja teenager Naruto Uzumaki and his allies.", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"}])
+
 
