@@ -15,7 +15,7 @@ function AnimeItem({anime}) {
         <div className='anime-item'>
          <h2>{anime.title}</h2>
          <img src={anime.img} alt=""/>
-         <button onClick={handleOnClick}> Discuss</button>
+         <button onClick={handleOnClick}> Join discussion</button>
          
         </div>
     );
