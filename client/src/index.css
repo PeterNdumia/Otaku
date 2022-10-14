@@ -24,11 +24,13 @@ code {
   padding-right: 50px;
 }
 .nav-bar button{
-  border: none;
+  border: 0.3px solid white;
+  margin: 20px;
+  border-radius: 10px;
   width: 100px;
   height:auto;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #010e1a;
 }
 
@@ -175,4 +177,7 @@ code {
 }
 .new-comment p{
   text-align: start;
+}
+.nav-user{
+  display: flex;
 }
