@@ -13,7 +13,7 @@ function AnimeItem({anime}) {
 
     return (
         <div className='anime-item'>
-         <h2>{anime.title}</h2>
+         <h3>{anime.title}</h3>
          <img src={anime.img} alt=""/>
          <button onClick={handleOnClick}> Join discussion</button>
          

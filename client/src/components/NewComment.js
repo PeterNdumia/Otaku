@@ -22,7 +22,7 @@ function NewComment({user, animeId,onAddComment}) {
 
     return (
     <div className='new-comment'>
-           <p>new comment</p>
+           <p>Post</p>
             <form onSubmit={handleSubmit}>
                <input type="text" name="msg" value={commentMsg} onChange={(e)=> setCommentMsg(e.target.value)}/>
               <button type="submit" value="Submit">Post</button>

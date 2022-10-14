@@ -23,7 +23,7 @@ function CommentList({user,animeId, comments, getComments, onEditComment, onDele
     return (
         //list comment items
         <div className='comment-list'>
-               <p>commentlist</p>
+           <p>Discussion</p>
            {renderComments}
         </div>
     );

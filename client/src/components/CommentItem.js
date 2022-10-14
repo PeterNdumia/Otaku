@@ -29,9 +29,10 @@ function CommentItem({user, comment, onEditComment, onDeleteComment}) {
         <div className='comment-item'>
             {/*comment item from index comment'*/}
             <p>{comment.commentMsg}</p>
-
-        <button onClick={handleEdit}>edit</button>
-        <button onClick={handleDelete}>delete</button>
+            <div className='button-cont'>
+             <button onClick={handleEdit}>edit</button>
+             <button onClick={handleDelete}>delete</button>
+             </div>
         </div>
     );
 }
