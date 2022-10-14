@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function NewComment({animeId,onAddComment}) {
+function NewComment({user, animeId,onAddComment}) {
     const [commentMsg, setCommentMsg]= useState("")
     function handleSubmit(event){
         event.preventDefault();
@@ -8,7 +8,8 @@ function NewComment({animeId,onAddComment}) {
              method: "POST",
               body: JSON.stringify({
                commentMsg:commentMsg,   
-               anime_id:animeId   
+               anime_id:animeId,
+               user_id: user.id
                 
     }),
     headers: {

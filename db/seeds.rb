@@ -15,4 +15,4 @@ Anime.create([{title:"Naruto", desc: "A show about naruto", img: "https://img1.a
     {title:"Naruto", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg",rating:"8.5/10"},
     {title:"Naruto1", desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"} ,
     {title:"Naruto3",desc: "A show about naruto", img: "https://img1.ak.crunchyroll.com/i/spire4/5568ffb263f6bcba85a639980b80dd9a1612993223_main.jpg", rating:"8.5/10"}])
-Comment.create([{commentMsg:"It was such a good show", anime_id:1},{commentMsg:"It was such a good show",anime_id:2},{commentMsg:"It was such a good show",anime_id:1},{commentMsg:"It was such a good show",anime_id:2}])
+

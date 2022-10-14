@@ -19,7 +19,7 @@ class CommentsController < ApplicationController
 
     private 
     def comment_params
-        params.permit(:commentMsg, :anime_id)
+        params.permit(:commentMsg, :anime_id, :user_id)
     end
     def comment_update_params
         params.permit(:commentMsg)
