@@ -4,7 +4,7 @@ import AnimeItem from './AnimeItem';
 function AnimeList({animes, getAnimes}) {
       //fetch animes and map them on animelist
       useEffect(()=>{
-        fetch('http://localhost:3000/animes')
+        fetch('/animes')
         .then((response)=> response.json())
         .then((data)=>{
             console.log(data)

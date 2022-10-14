@@ -6,7 +6,7 @@ function CommentItem({comment, onEditComment, onDeleteComment}) {
 
     //create functions to edit and delete comments 
     function handleDelete(){
-        axios.delete(`https://localhost:3000/comments/${comment.id}`)
+        axios.delete(`http://localhost:3000/comments/${comment.id}`)
         .then(()=>{
            
             onDeleteComment(comment)

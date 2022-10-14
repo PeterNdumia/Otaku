@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 
-function NewComment({onAddComment}) {
+function NewComment({animeId,onAddComment}) {
     const [commentMsg, setCommentMsg]= useState("")
     function handleSubmit(event){
         event.preventDefault();
-        fetch("https://localhost:3000/animeComments", {
+        fetch("/comments", {
              method: "POST",
               body: JSON.stringify({
-               commentMsg:commentMsg,      
+               commentMsg:commentMsg,   
+               anime_id:animeId   
                 
     }),
     headers: {
@@ -20,7 +21,7 @@ function NewComment({onAddComment}) {
 
     return (
     <div className='new-comment'>
-           <p>new commwnt</p>
+           <p>new comment</p>
             <form onSubmit={handleSubmit}>
                <input type="text" name="msg" value={commentMsg} onChange={(e)=> setCommentMsg(e.target.value)}/>
               <button type="submit" value="Submit">Post</button>

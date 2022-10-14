@@ -3,14 +3,16 @@ import AnimeSummary from '../components/AnimeSummary'
 import NewComment from '../components/NewComment'
 import CommentList from '../components/CommentList'
 import {useParams } from 'react-router-dom'; 
+import Login from './Login';
 
-function AnimePage({comments, getComments, onAddComment, onEditComment, onDeleteComment}) {
-    const[anime, setAnime]= useState();
+function AnimePage({user,setUser, comments, getComments, onAddComment, onEditComment, onDeleteComment}) {
+    const[anime, setAnime]= useState({});
     const params = useParams();
     const animeId = params.animeId
     console.log(animeId)
-
     console.log(params)
+
+   
 
 
     useEffect(() =>{
@@ -21,13 +23,19 @@ function AnimePage({comments, getComments, onAddComment, onEditComment, onDelete
             setAnime(data)
 
         })
+        .catch((err)=>{
+            console.log(err.message);
+
+        });
 
     },[animeId])
     console.log(anime)
+
+    if (!user) return <Login onLogin={setUser} />;
     return (
         <div className='anime-page'>
             <AnimeSummary anime={anime}/>
-            <NewComment onAddComment={onAddComment}/>
+            <NewComment animeId={animeId} onAddComment={onAddComment}/>
             <CommentList animeId={animeId} comments={comments} getComments={getComments} onEditComment={onEditComment} onDeleteComment={onDeleteComment}/>
         </div>
     );
