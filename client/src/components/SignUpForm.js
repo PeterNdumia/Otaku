@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import { Button, Error, Input, FormField, Label} from "../styles";
 function SignUpForm({onLogin}) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -31,44 +31,44 @@ function SignUpForm({onLogin}) {
     return (
         <div className='sign-up-form'>
         <form onSubmit={handleSubmit}>
-      <field>
-        <label htmlFor="username">Username</label>
-        <input
+      <FormField>
+        <Label htmlFor="username">Username</Label>
+        <Input
           type="text"
           id="username"
           autoComplete="off"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-      </field>
-      <field>
-        <label htmlFor="password">Password</label>
-        <input
+      </FormField>
+      <FormField>
+        <Label htmlFor="password">Password</Label>
+        <Input
           type="password"
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           autoComplete="current-password"
         />
-      </field>
-      <field>
-        <label htmlFor="password">Password Confirmation</label>
-        <input
+      </FormField>
+      <FormField>
+        <Label htmlFor="password">Confirm Password</Label>
+        <Input
           type="password"
           id="password_confirmation"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
-        </field>
-        <field>
-        <button type="submit">Sign Up</button>
-      </field>
-      <field>
+      </FormField>
+      <FormField>
+        <Button type="submit">Sign Up</Button>
+      </FormField>
+      <FormField>
         {errors.map((err) => (
-          <error key={err}>{err}</error>
+          <Error key={err}>{err}</Error>
         ))}
-      </field>
+      </FormField>
         </form>
         </div>
     );
