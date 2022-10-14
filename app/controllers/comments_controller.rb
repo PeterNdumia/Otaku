@@ -5,6 +5,13 @@ class CommentsController < ApplicationController
         render json: comment, status: :created
     end
 
+    def index
+        render json: Comment.all, status: :ok
+    end
+    def show
+        render json: Comment.find_by(id: params[:id]), status: :ok
+    end
+
     def update
         comment = Comment.find_by(id: params[:id])
         comment.update(comment_update_params)
@@ -16,7 +23,6 @@ class CommentsController < ApplicationController
         comment.destroy
         head :no_content
     end
-
 
     private 
     def comment_params
