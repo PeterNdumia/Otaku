@@ -12,7 +12,7 @@ function Login({ onLogin }) {
       {showLogin ? (
         <>
           <LoginForm onLogin={onLogin} />
-          <Divider />
+      
           <p>
             Don't have an account? &nbsp;
             <Button color="secondary" onClick={() => setShowLogin(false)}>
@@ -23,7 +23,7 @@ function Login({ onLogin }) {
       ) : (
         <>
           <SignUpForm onLogin={onLogin} />
-          <Divider />
+         
           <p>
             Already have an account? &nbsp;
             <Button color="secondary" onClick={() => setShowLogin(true)}>
@@ -42,10 +42,5 @@ const Wrapper = styled.section`
   padding: 16px;
 `;
 
-const Divider = styled.hr`
-  border: none;
-  border-bottom: 1px solid #ccc;
-  margin: 16px 0;
-`;
 
 export default Login;

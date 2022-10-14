@@ -27,7 +27,7 @@ function NavBar({user, setUser}) {
         <div className='nav-bar'>
             {/*add home navigation when otaku clicked*/}
             <p onClick={handleHome}>Otaku</p>
-            <button variant="outline" onClick={handleLogout}>Log out</button>
+            <button  onClick={handleLogout}>Log out</button>
         </div>
     );
 }
