@@ -51,4 +51,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.4.25                 # update Bundler to latest compatible
+   2.4.25
