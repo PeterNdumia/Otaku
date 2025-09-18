@@ -21,6 +21,9 @@ gem 'bootsnap', '>= 1.7.5', require: false  # newer version for Ruby 3.x
 # CORS support
 gem 'rack-cors'
 
+gem "logger", "~> 1.6"
+
+
 # Development & test
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -209,6 +209,7 @@ DEPENDENCIES
   bootsnap (>= 1.7.5)
   byebug
   listen (~> 3.5)
+  logger (~> 1.6)
   pg (~> 1.2)
   puma (~> 5.0)
   rack-cors
